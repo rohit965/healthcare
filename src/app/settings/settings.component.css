@@ -1,0 +1,61 @@
+mat-form-field{
+    width: 200px;
+}
+
+mat-card-title{
+    text-align: left;
+   }
+
+mat-card-actions{
+ 
+  align-self: center;
+}
+
+.setting-header {
+  height: 20px;
+  display: flex;
+ text-align: left;
+ align-items: center;
+ color: black;
+ font-weight: normal;
+ font-size: 15px;
+ 
+}
+
+.header {
+     height: 20px;
+     display: flex;
+    text-align: left;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    background-color:#EBF5FB;
+    margin-left: 45px;
+  }
+  .detail-header{
+    height: 10px;
+    display: flex;
+    color: black;
+    font-size: 15px;
+    text-align: left;
+     font-weight: normal;
+      }
+
+      .detail-header2{
+         height: 12px;
+        align-items: left;
+        color: black;
+        font-size: 15px;
+        margin-top: 18px;
+        margin-bottom: 15px;
+        font-weight: 530;
+        display: inline-flex;
+        }
+
+        .current-theme {
+            background-color: var(--background);
+            color: var(--text-color);
+            font-size: var(--font-size);
+            font-style: var(--font-style);
+          }

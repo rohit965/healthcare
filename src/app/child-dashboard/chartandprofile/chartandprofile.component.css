@@ -1,0 +1,126 @@
+/* image */
+
+#u99 {
+    border-width: 0px;
+    position: absolute;
+    /* left: 0px; */
+    /* top: 0px; */
+    width: 72px;
+    height: 77px;
+}
+
+.image {
+    color: #000000;
+}
+
+.ax_default {
+    font-family: 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+    text-align: center;
+    line-height: normal;
+}
+
+
+
+
+#u99_img {
+    border-width: 0px;
+    /* position: absolute; */
+    /* left: 0px;
+    top: 0px; */
+    width: 72px;
+    height: 77px;
+}
+
+.pulseImage{
+
+    width: 180px;
+    height: 90px;
+}
+
+th, td {
+  padding: 15px;
+}
+table, th, td {
+    border: 1px solid rgb(245, 239, 239);
+  }
+/* otherclass */
+
+.userName{
+    font-size: 20px;
+    color: #666666;
+    white-space: nowrap;
+}
+
+.age{
+    font-size: 14px;
+    color: #AAAAAA;
+    white-space: nowrap;
+}
+
+.encounter{
+    white-space: nowrap;
+    font-size: 14px;
+    color: #919191;
+}
+
+.pulseHeader{
+    font-size: 18px;
+    color: #999999;
+    white-space: nowrap;
+}
+.pulseSubHeader{
+    font-size: 28px;
+    color: #D26B6B;
+    white-space: nowrap;
+}
+
+.sp02Header{
+    font-size: 18px;
+    color: #999999;
+    white-space: nowrap;
+}
+.sp02SubHeader{
+    font-size: 28px;
+    color: #99CC33;
+    white-space: nowrap;
+}
+
+.RRHeader{
+    font-size: 18px;
+    color: #999999;
+    white-space: nowrap;
+}
+
+.RRSubHeader{
+    font-size: 28px;
+    color: #99CC33;
+    white-space: nowrap;
+}
+
+.tempHeader{
+    white-space: nowrap;
+    font-size: 18px;
+    color: #999999;
+}
+
+.tempSubHeader{
+    white-space: nowrap;
+    font-size: 28px;
+    color: #88C83E;
+    
+}
+.BPHeader{
+    white-space: nowrap;
+    font-size: 18px;
+    color: #999999;
+}
+
+.BPSubHeader{
+    white-space: nowrap;
+    font-size: 28px;
+    color: #E3B552;
+}

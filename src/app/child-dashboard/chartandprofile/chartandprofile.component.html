@@ -1,0 +1,119 @@
+<body>
+    <div class="container-fluid">
+         <div class="row" >
+        <div class="col-md-2" style="border: 1px solid rgb(245, 239, 239);" >
+            <div >
+                <div>
+                    <img id="u99_img" class="img-responsive" src="\assets\profile.png">
+                </div>
+                <div class="userName">
+                    Mike Lewis
+                </div>
+                <div class="age">
+                    30 years, Male
+                </div>
+                <div class="encounter">
+                    Encounter - 104
+                </div>
+            </div>
+     
+        </div>
+
+        <div class="row my-2">
+            <div class="col-md-2 py-1" style="border: 1px solid rgb(245, 239, 239);">
+                <div class="card">
+                    <div class="card-body">
+                        <div>
+                            <div class="pulseHeader">
+                                Pulse (/min)
+                            </div>
+                            <div  class="pulseSubHeader">
+                                110
+                            </div>
+                            <div>
+                                <img class="img-responsive" src="\assets\pulse.gif">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 py-1" style="border: 1px solid rgb(245, 239, 239);">
+                <div class="card">
+                    <div class="card-body" >
+                        <div>
+                            <div class="sp02Header">
+                               SP02 (%)
+                            </div>
+                            <div class="sp02SubHeader">
+                                97
+                            </div>
+                            <div>
+                                <img class="img-responsive" src="\assets\sp02.gif">
+                            </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-2 py-1" style="border: 1px solid rgb(245, 239, 239);">
+                <div class="card">
+                    <div class="card-body">
+                        <div>
+                            <div class="RRHeader">
+                              RR (/MIN)
+                            </div>
+                            <div class="RRSubHeader">
+                             22
+                            </div>
+                            <div>
+                                <img class="img-responsive" src="\assets\rr.gif">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 py-1" style="border: 1px solid rgb(245, 239, 239);">
+                <div class="card">
+                    <div class="card-body">
+                        <div>
+                            <div class="tempHeader">
+                                Temperature (°F)
+                            </div>
+                            <div class="tempSubHeader">
+                             98
+                            </div>
+                            <div>
+                                <!-- <img class="pulseImage" src="\assets\rr.gif"> -->
+                              <app-chart-widget [lineChartData]=tempartureData></app-chart-widget>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 py-1" style="border: 1px solid rgb(245, 239, 239);">
+                <div class="card">
+                    <div class="card-body">
+                        <div>
+                            <div class="BPHeader">
+                                BP (mmHg)
+                            </div>
+                            <div class="BPSubHeader">
+                                140/96
+                            </div>
+                            <div>
+                                <app-chart-widget [lineChartData]=Bpata ></app-chart-widget>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+       
+   
+    
+    </body>

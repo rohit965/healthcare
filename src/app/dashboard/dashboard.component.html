@@ -1,0 +1,56 @@
+<body>
+    <div class="row" class="container-fluid" style="margin-top: 80px">
+
+         <div class="row">
+           
+        <div class="col-sm-12">
+            <mat-card >
+                <app-chartandprofile></app-chartandprofile>
+               </mat-card>
+              </div>
+         </div>
+    <div class="row">
+    <div class="col-sm-10"> 
+     <div class="row" style="padding: 10px;">
+        <div class="col-md-4" *ngIf="featureList[0].enabled">
+            <mat-card   >
+                <app-active-diagnosis></app-active-diagnosis>
+            </mat-card>
+        </div>
+        <div class="col-md-4" *ngIf="featureList[1].enabled">
+            <mat-card  >
+                <app-active-medicaton></app-active-medicaton>
+                
+            </mat-card>
+        </div>
+        <div class="col-md-4" *ngIf="featureList[2].enabled">
+            <mat-card  >
+                <app-allergies></app-allergies>
+            </mat-card>
+        </div>
+     </div>
+     
+     <div class="row">
+        <div class="col-md-4" *ngIf="featureList[3].enabled">
+            <mat-card   >
+                <app-presurgical-procedures></app-presurgical-procedures>
+            </mat-card>
+        </div>
+        <div class="col-md-4" *ngIf="featureList[4].enabled">
+            <mat-card  >
+               <app-sugeons-notes></app-sugeons-notes>
+                
+            </mat-card>
+        </div>
+    </div>
+    </div>
+    <div class="col-sm-2" style="padding: 10px;"  *ngIf="featureList[5].enabled"> 
+        <mat-card  >
+           <app-reports></app-reports>
+        </mat-card>
+        </div>
+    </div>
+</div>
+   
+    
+    </body>

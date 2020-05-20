@@ -1,0 +1,84 @@
+<div class="setting-header" >
+  <span>Settings</span> 
+</div>
+<section style="margin-top: 5px" fxLayout="row wrap" fxLayoutAlign="center center">
+    <mat-card fxFlex="100%" fxFlex.xs="100%">
+      <mat-card-title class="header">Theme Settings</mat-card-title>
+      <form [formGroup]="projectForm" style="place-content: center;" autocomplete="off" novalidate (ngSubmit)="submit(projectForm.value)" fxLayout="column wrap"
+        fxLayoutGap="10px">
+        <mat-card-content >
+            <div class="detail-header">
+               Seletected theme will be applied in entire application
+            </div>
+
+
+      <div fxLayout="row"  fxLayoutAlign="left" >
+                   <div class="detail-header2">Select Theme</div>
+      </div>
+           
+            <div fxLayout="row" >
+               
+                   <select  style="width: 250px ;" placeholder = "Select" formControlName="theme" id="theme">
+                    <option value = "">Select</option>
+                    <option value = "Default">Citiustech Default</option>
+                  <option value = "Blue">Primary Blue</option>
+                   <option value = "Client">Client Theme</option>      
+                   </select>
+                
+             </div>
+
+             <div class="header" style="margin-top: 20px; margin-left: -400px; width: 285%;">
+              Feature Settings
+           </div>  
+           <div class="detail-header" style="margin-top: 10px;">
+            Selected feature will be applied to patient details 
+         </div>
+
+
+   <div fxLayout="row"  fxLayoutAlign="left" >
+                <div class="detail-header2">Select Feature</div>
+   </div>  
+
+   <table>
+   
+    <tr>
+      <td>
+      <input type="checkbox" checked=featureList[0].enabled (change)="setFeature(0,$event)" style="width: 100px; height: 25px;padding: 5px;" id="check1" formControlName="check1" />
+   {{featureList[0].featureName}}
+    </td> 
+    <td>
+   <input type="checkbox" checked=featureList[1].enabled (change)="setFeature(1,$event)" style="width: 100px; height: 25px;padding: 5px;" id="check2" formControlName="check2" />
+   {{featureList[1].featureName}}
+   </td>
+    </tr>
+    <tr>
+      <td>
+      <input type="checkbox" checked=featureList[2].enabled (change)="setFeature(2,$event)" style="width: 100px; height: 25px;padding: 5px;"  id="check3" formControlName="check3" />
+   {{featureList[2].featureName}}
+    </td> 
+    <td>
+   <input type="checkbox" checked=featureList[3].enabled (change)="setFeature(3,$event)" style="width: 100px; height: 25px;padding: 5px;" id="check4" formControlName="check4" />
+   {{featureList[3].featureName}}
+   </td>
+    </tr>
+    <tr>
+      <td>
+      <input type="checkbox" checked=featureList[4].enabled (change)="setFeature(4,$event)" style="width: 100px; height: 25px;padding: 5px;" id="check5" formControlName="check5" />
+   {{featureList[4].featureName}}
+    </td> 
+    <td>
+   <input type="checkbox"  checked=featureList[5].enabled (change)="setFeature(5,$event)" style="width: 100px; height: 25px;padding: 5px;" id="check6" formControlName="check6" />
+   {{featureList[5].featureName}}
+   </td>
+    </tr>
+    </table>
+
+ 
+        </mat-card-content>
+        <mat-card-actions  style="margin-top: 100px">
+          <button  class="md-button-center" mat-raised-button color="primary" (click)="onCancel()">Cancel</button>
+          <button class="md-button-center" type="button" mat-raised-button color="primary" (click)="submit(projectForm.value)" >Apply</button>
+        </mat-card-actions>
+      </form>
+    </mat-card>
+  </section>

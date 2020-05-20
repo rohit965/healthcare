@@ -1,0 +1,26 @@
+table, th , td  {
+    border: 0px solid grey;
+    border-collapse: collapse;
+   padding-right: 2em;
+   padding-bottom: 0.5em;
+  }
+
+  table{
+      margin-top: 5px;
+  }
+
+  .header{
+    font-size: 15px;
+    color: #445976;
+    font-family: 'Arial Bold', 'Arial';
+    font-weight: 700;
+    font-style: normal;
+  }
+  ul {list-style: none}
+
+  li::before {content: "•"; color: gray;
+    display: inline-block; width: 1em;
+    margin-left: -2em;
+  font-size: 15px;
+  padding: 2px;
+  }
